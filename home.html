@@ -1,211 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" BUY website for eco-friendly products">
-    <meta name="Keywprds" content="WE BUY,environment,recycled,answer,question">
-    <meta name="author" content="anton, baraa">
-    <meta name="robots" content="follow">
-    <title>insuracy</title>
-    <link rel="stylesheet" href="css/home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Insurancy</title>
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="header">
+<div class="header"> 
     <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/logo.png" width="125px">
-            </div>
-            <nav>
-                    <ul id="MenuItems">
-                        <li><a href="Home.html">Home</a></li>
-                        <li><a href="insurance.html">Insurance</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="Logo" width="125">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="insurance.html">Insurance</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
                     </ul>
-                </nav>
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1>Bank Saving<br>Or Insurance ?</h1>
-                    <p>Insurance is a financial tool that helps individuals and businesses protect themselves from the financial consequences of unexpected losses. 
-                       <br> It works by transferring the risk of loss to an insurance company in exchange for regular premium payments.</p>
-                    <a href="products.html" class="btn">Explore Now &#8594;</a>
                 </div>
-                <div class="col-2">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IbhuV9xS8vc?si=JYMWja1z_YqA4IQ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+            </div>
+        </nav>
+
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <!-- Left Content -->
+                <div class="col-md-6">
+                    <h1 class="fw-bold">Bank Saving<br>Or Insurance?</h1>
+                    <p>
+                        Insurance is a financial tool that helps individuals and businesses protect themselves from the financial consequences of unexpected losses.
+                        <br> It works by transferring the risk of loss to an insurance company in exchange for regular premium payments.
+                    </p>
+                    <a href="products.html" class="btn btn-dark text-white">Explore Now &#8594;</a>
+                </div>
+        
+                <!-- Right Content (YouTube Video) -->
+                <div class="col-md-6 text-center">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/IbhuV9xS8vc?si=JYMWja1z_YqA4IQ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!---featured categories--->
+<div class="categories">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-6 text-center">
+                <img src="images/category-1.png" alt="Category 1" class="img-fluid">
+            </div>
+            <div class="col-md-3 col-6 text-center">
+                <img src="images/category-1.png" alt="Category 2" class="img-fluid">
+            </div>
+            <div class="col-md-3 col-6 text-center">
+                <img src="images/category-1.png" alt="Category 3" class="img-fluid">
             </div>
         </div>
     </div>
-<!---featured categories--->
-    <div class="categories">
+</div>
+
+<!---featured products--->
+<div class="container my-5">
+    <h2 class="fw-bold title text-center">Featured Products</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-3 col-6 text-center">
+            <a href="insurance.html">
+                <img src="images/product-1.jpg" alt="Home Insurance" class="img-fluid">
+            </a>
+            <a href="insurance.html">
+                <h4>Home Insurance</h4>
+            </a>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+            <a href="insurance.html">
+                <img src="images/product-2.jpg" alt="Auto Insurance" class="img-fluid">
+            </a>
+            <a href="insurance.html">
+                <h4>Auto Insurance</h4>
+            </a>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+            <a href="insurance.html">
+                <img src="images/product-3.jpg" alt="Health Insurance" class="img-fluid">
+            </a>
+            <a href="insurance.html">
+                <h4>Health Insurance</h4>
+            </a>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+            <a href="insurance.html">
+                <img src="images/product-4.jpg" alt="Life Insurance" class="img-fluid">
+            </a>
+            <a href="insurance.html">
+                <h4>Life Insurance</h4>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="offer">
         <div class="small-container">
             <div class="row">
-                <div class="col-3">
-                    <img src="images/category-1.png">
+                <div class="col-2">
+                    <img src="images/category-1.png" class="offer-img">
                 </div>
-                <div class="col-3">
-                    <img src="images/category-1.png">
-                </div>
-                <div class="col-3">
-                    <img src="images/category-1.png">
+                <div class="col-2">
+                    <p>Exclusively Available on Black Friday</p>
+                    <h1 class="fw-bold">50% Off</h1>
+                    <small>Don't miss out on this incredible offer! <br>
+                        For new customers only, <br>
+                        For a limited time only, <br> 
+                        enjoy a massive 50% discount on your insurance. <br>
+                    </small>
+                    <a href="products.html": class="btn btn-dark text-white">Buy Now &#8594; </a>
                 </div>
             </div>
         </div>
     </div>
-<!---featured products--->
-
-<div class="small-container">
-    <h2 class="title">Featured Products</h2>
-        <div class="row">
-            <div class="col-4">
-                <a href="products.html"><img src="images/product-1.jpg"></a>
-                <a href="products.html"><h4>Home Insurance</h4></a>
-            </div>
-            <div class="col-4">
-                <a href="products.html"><img src="images/product-2.jpg"></a>
-                <a href="products.html"><h4>Auto Insurance</h4></a>
-            </div>
-            <div class="col-4">
-                <a href="products.html"><img src="images/product-3.jpg"></a>
-                <a href="products.html"><h4>Health Insurance</h4></a>
-            </div>
-            <div class="col-4">
-                <a href="products.html"><img src="images/product-4.jpg"></a>
-                <a href="products.html"><h4>Life Insurance</h4></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="offer">
+    <div class="testimonial">
             <div class="small-container">
                 <div class="row">
-                    <div class="col-2">
-                        <img src="images/category-1.png" class="offer-img">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever"
+                        </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img src="images/user-3.png">
+                        <h3>Lou Andrew</h3>
                     </div>
-                    <div class="col-2">
-                        <p>Exclusively Available on Black Friday</p>
-                        <h1>50% Off</h1>
-                        <small>Don't miss out on this incredible offer! <br>
-                            For new customers only, <br>
-                            For a limited time only, <br> 
-                            enjoy a massive 50% discount on your insurance. <br>
-                        </small>
-                        <a href="products.html": class="btn">Buy Now &#8594; </a>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever"</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img src="images/user-2.png">
+                        <h3>Sean Parker</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img src="images/user-1.png">
+                        <h3>Rose Michael</h3>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="testimonial">
-                <div class="small-container">
-                    <div class="row">
-                        <div class="col-3">
-                            <i class="fa fa-quote-left"></i>
-                            <p>"So happy to find an eco-friendly clothing brand that uses 
-                                organic materials and ethical production practices. 
-                                Keep up the good work!"
-                            </p>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <img src="images/user-3.png">
-                            <h3>Lou Andrew</h3>
-                        </div>
-                        <div class="col-3">
-                            <i class="fa fa-quote-left"></i>
-                            <p>"Your commitment to transparency and sustainability is refreshing! 
-                                The detailed information about your products' 
-                                origins and environmental impact makes me feel confident in my purchases."</p>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <img src="images/user-2.png">
-                            <h3>Sean Parker</h3>
-                        </div>
-                        <div class="col-3">
-                            <i class="fa fa-quote-left"></i>
-                            <p>Lorem Ipsum is simply dummy text of the printing
-                            and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever</p>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <img src="images/user-1.png">
-                            <h3>Rose Michael</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="brands">
-                <div class="small-container">
-                    <div class="row">
-                        <div class="col-5">
-                            <img src="images/category-1.png">
-                        </div>
-                        <div class="col-5">
-                            <img src="images/category-1.png">
-                        </div>
-                        <div class="col-5">
-                            <img src="images/category-1.png">
-                        </div>
+        <div class="categories">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-3 col-6 text-center">
+                        <img src="images/category-1.png" alt="Category 1" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-6 text-center">
+                        <img src="images/category-1.png" alt="Category 2" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-6 text-center">
+                        <img src="images/category-1.png" alt="Category 3" class="img-fluid">
                     </div>
                 </div>
             </div>
+        </div>
+        
 
-            <div class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="footer-col-1">
-                            <h3>Download Our App</h3>
-                            <p>Download App for mobile phone application.</p>
-                            <div class="app-logo">
-                                <img src="images/play-store.png">
-                                <img src="images/app-store.png">
-                            </div>
-                        </div>
-                        <div class="footer-col-2">
-                            <img src="images/logo-white.png">
-                            <p>Our Purpose is to provide financial protection against unexpected losses. It works by transferring the risk of loss from an individual or business to an insurance company.</p>
-                        </div>
-                        <div class="footer-col-3">
-                            <h3>Useful</h3>
-                            <ul>
-                                <li>Coupons</li>
-                                <li>Blog Post</li>
-                                <li>Return Policy</li>
-                                <li>Join Affiliate</li>
-                            </ul>
-                        </div>
-                        <div class="footer-col-4">
-                            <h3>Follow us</h3>
-                            <ul>
-                                <li>Facebook</li>
-                                <li>Twitter</li>
-                                <li>Instagram</li>
-                                <li>YouTube</li>
-                            </ul>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for mobile phone application.</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png">
                         </div>
                     </div>
-                    <hr>
-                    <p class="copyright">&copy; Copyright 2024 - Insurancy</p>
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.png">
+                        <p>Our Purpose is to provide financial protection against unexpected losses. It works by transferring the risk of loss from an individual or business to an insurance company.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
                 </div>
+                <hr>
+                <p class="copyright">&copy; Copyright 2024 - Insurancy</p>
             </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="js/bootstrap.bundle.min.js""></script>
+
 </body>
 </html>
