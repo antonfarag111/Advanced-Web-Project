@@ -1,11 +1,11 @@
-* {
+html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Poppins', sans-serif !important;
+html body {
+  font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
@@ -25,9 +25,9 @@ nav ul, nav ul li {
   margin-right: 20px;
 }
 
-a, .container p {
-  text-decoration: none !important;
-  color: #555 !important;
+body a, .container p {
+  text-decoration: none;
+  color: #555;
 }
 
 .container {
@@ -98,7 +98,7 @@ margin-bottom: 50px;
 transition: transform 0.5s;
 }
 .col-4 img{
-width: 100%
+width: 100%;
 }
 
 .title{
@@ -131,7 +131,7 @@ h4{
     color: #ff523b;
 }
 .col-4:hover{
-    transform: translateY(-5px)
+    transform: translateY(-5px);
 }
 /*---------offer----------*/
 .offer{
@@ -191,7 +191,7 @@ small{
         filter: grayscale(100%);
     }
 .col-5 img:hover{
-filter: grayscale(0)
+filter: grayscale(0);
 }
 
 /*---------footer----------*/
