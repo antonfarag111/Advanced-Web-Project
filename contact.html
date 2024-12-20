@@ -7,10 +7,6 @@
 <link rel="stylesheet" href="css/contact.css"/>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-
-
-</style>
 </head>
 <body>
 <div class="header"> 
@@ -26,20 +22,39 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="insurance.html">Insurance</a></li>
+                        <li class="nav-item"><a class="nav-link" href="learn.html">Learn</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="insurance.html">Insurance</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScigUs-6_lVQrr4izrxzVlmIupOholqkCcKr24yyxgFCDWN8g/viewform?embedded=true" width="100%" height="900" style="margin-top:70px;"></iframe>
-</div>
+        <div class="contact-form" style="margin-top:70px;">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post" class="form-container" onsubmit="return validateForm()">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
 </div>
 
 <!-- Bootstrap JS Bundle -->
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/contact.js"></script>
 <footer>
   <p>&copy; Copyright 2024 - Insurancy</p>
 </footer>

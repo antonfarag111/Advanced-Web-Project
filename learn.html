@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact Us</title>
+<link rel="stylesheet" href="css/learn.css"/>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header"> 
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="Logo" width="125">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="learn.html">Learn</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="insurance.html">Insurance</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="container mt-5">
+                <div class="form-container">
+                    <h2>Insurance Quiz</h2>
+                    <form id="quizForm">
+                        <div class="mb-3">
+                            <label for="question1" class="form-label">1. What is the primary purpose of insurance?</label>
+                            <select class="form-select" id="question1" name="question1">
+                                <option value="a">A. To provide financial protection</option>
+                                <option value="b">B. To increase wealth</option>
+                                <option value="c">C. To avoid taxes</option>
+                                <option value="d">D. To save money</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="question2" class="form-label">2. Which type of insurance covers damage to your car?</label>
+                            <select class="form-select" id="question2" name="question2">
+                                <option value="a">A. Health insurance</option>
+                                <option value="b">B. Life insurance</option>
+                                <option value="c">C. Auto insurance</option>
+                                <option value="d">D. Home insurance</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="question3" class="form-label">3. What does a deductible refer to in an insurance policy?</label>
+                            <select class="form-select" id="question3" name="question3">
+                                <option value="a">A. The amount you pay out of pocket before insurance covers the rest</option>
+                                <option value="b">B. The monthly premium</option>
+                                <option value="c">C. The total coverage amount</option>
+                                <option value="d">D. The insurance company's profit</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <div id="score" class="mt-3"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/learn.js"></script>
+<footer>
+  <p>&copy; Copyright 2024 - Insurancy</p>
+</footer>
+</body>
+</html>
