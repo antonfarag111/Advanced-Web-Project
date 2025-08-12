@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CORS Test</title>
+<style>
+    body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; }
+    pre { background: #f4f4f4; padding: 1rem; border-radius: 5px; }
+</style>
+</head>
+<body>
+<h1>CORS Tester</h1>
+<button id="testBtn">Test CORS POST</button>
+<pre id="output">Click "Test CORS POST" to start...</pre>
+
+<script>
+document.getElementById('testBtn').addEventListener('click', async () => {
+    const output = document.getElementById('output');
+    output.textContent = "Sending POST request...\n";
+
+    try {
+        const formData = new FormData();
+        formData.append("name", "Test User");
+        formData.append("email", "test@example.com");
+        formData.append("message", "This is a CORS test");
+
+        const res = await fetch("https://webuy.great-site.net/submit_form.php", {
+            method: "POST",
+            body: formData
+        });
+
+        output.textContent += `Status: ${res.status} ${res.statusText}\n`;
+
+        // Show headers
+        output.textContent += "Headers:\n";
+        res.headers.forEach((value, key) => {
+            output.textContent += `${key}: ${value}\n`;
+        });
+
+        // Try to parse as JSON
+        try {
+            const data = await res.json();
+            output.textContent += "\nJSON Response:\n" + JSON.stringify(data, null, 2);
+        } catch (err) {
+            const text = await res.text();
+            output.textContent += "\nRaw Response:\n" + text;
+        }
+
+    } catch (err) {
+        output.textContent += "Error:\n" + err.toString();
+    }
+});
+</script>
+</body>
+</html>
